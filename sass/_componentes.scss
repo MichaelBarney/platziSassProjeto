@@ -8,7 +8,7 @@
     text-align: center;
     margin: 16px;
 
-    @include bordaEspecial($cor-secundaria, "normal");
+    @include bordaEspecial();
 
     h2{
         padding: 16px;
