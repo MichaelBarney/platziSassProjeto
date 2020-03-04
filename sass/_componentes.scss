@@ -1,5 +1,4 @@
 .projeto{
-    background-color: $cor-clara;
     width: 200px;
     height: 200px;
     float: left;
@@ -9,6 +8,12 @@
     margin: 16px;
 
     @include bordaEspecial();
+
+    .info{
+        background-color: $cor-clara;
+        height: 100%;
+        width: 100%;
+    }
 
     h2{
         padding: 16px;

@@ -46,7 +46,6 @@ body {
 }
 
 .projeto {
-  background-color: white;
   width: 200px;
   height: 200px;
   float: left;
@@ -61,6 +60,11 @@ body {
   -o-border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
+}
+.projeto .info {
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 .projeto h2 {
   padding: 16px;
