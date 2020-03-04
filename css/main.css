@@ -68,6 +68,10 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
+  border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
 }
 .projeto h2 {
   padding: 16px;
