@@ -15,6 +15,7 @@ body {
 #header .foto {
   float: left;
   height: 100%;
+  background-color: blue;
 }
 #header .info {
   float: left;
@@ -42,6 +43,10 @@ body {
 a:link {
   color: #87C739;
   text-decoration: inherit;
+}
+
+#footer {
+  background-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
