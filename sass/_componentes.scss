@@ -2,7 +2,9 @@
     background-color: $cor-clara;
 }
 
-a:link{
-    color: $cor-secundaria;
-    text-decoration: inherit;
+a{
+    &:link{
+        color: $cor-secundaria;
+        text-decoration: inherit;
+    }
 }
