@@ -11,3 +11,22 @@ $fonte-principal: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+//MIXINS
+@mixin bordaEspecial($cor, $tipo){
+    background: linear-gradient($cor-clara, $cor-primaria); 
+    background: -o-linear-gradient($cor-clara, $cor-primaria); 
+    background: -webkit-linear-gradient($cor-clara, $cor-primaria); 
+    background: -moz-linear-gradient($cor-clara, $cor-primaria); 
+
+    border-radius: 10%;
+    -o-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+}

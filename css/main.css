@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 body {
   background-color: #223946;
   font-family: "Roboto", sans-serif;
@@ -41,6 +47,29 @@ body {
 
 .projeto {
   background-color: white;
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 8px;
+  text-align: center;
+  margin: 16px;
+  background: linear-gradient(white, #223946);
+  background: -o-linear-gradient(white, #223946);
+  background: -webkit-linear-gradient(white, #223946);
+  background: -moz-linear-gradient(white, #223946);
+  border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+}
+.projeto h2 {
+  padding: 16px;
+}
+.projeto p {
+  padding: 0px 8px 0px 8px;
+}
+.projeto hr {
+  margin: 16px 0 16px 0;
 }
 
 a:link {

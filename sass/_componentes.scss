@@ -1,5 +1,26 @@
 .projeto{
     background-color: $cor-clara;
+    width: 200px;
+    height: 200px;
+    float: left;
+
+    padding: 8px;
+    text-align: center;
+    margin: 16px;
+
+    @include bordaEspecial($cor-secundaria, "normal");
+
+    h2{
+        padding: 16px;
+    }
+
+    p{
+        padding: 0px 8px 0px 8px;
+    }
+
+    hr{
+        margin: 16px 0 16px 0;
+    }
 }
 
 a{
