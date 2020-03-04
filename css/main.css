@@ -35,6 +35,10 @@ body {
   padding: 0 8px 0 8px;
 }
 
+#footer {
+  background-color: white;
+}
+
 .projeto {
   background-color: white;
 }
