@@ -17,10 +17,13 @@ body {
 
 #header {
   background-color: white;
+  height: 200px;
+  padding: 24px 0px 24px 0px;
 }
 #header .foto {
   float: left;
   height: 100%;
+  background-color: blue;
 }
 #header .info {
   float: left;
