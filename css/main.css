@@ -23,7 +23,6 @@ body {
 #header .foto {
   float: left;
   height: 100%;
-  background-color: blue;
 }
 #header .info {
   float: left;
@@ -55,10 +54,17 @@ body {
   padding: 8px;
   text-align: center;
   margin: 16px;
-  background: linear-gradient(white, #223946);
-  background: -o-linear-gradient(white, #223946);
-  background: -webkit-linear-gradient(white, #223946);
-  background: -moz-linear-gradient(white, #223946);
+  background: linear-gradient(white, #87C739);
+  background: -o-linear-gradient(white, #87C739);
+  background: -webkit-linear-gradient(white, #87C739);
+  background: -moz-linear-gradient(white, #87C739);
+  border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  padding: 2px;
+}
+.projeto .info {
   border-radius: 10%;
   -o-border-radius: 10%;
   -webkit-border-radius: 10%;
@@ -68,10 +74,6 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
-  border-radius: 10%;
-  -o-border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
 }
 .projeto h2 {
   padding: 16px;
@@ -81,6 +83,24 @@ body {
 }
 .projeto hr {
   margin: 16px 0 16px 0;
+}
+
+.destaque {
+  background: linear-gradient(white, #223946);
+  background: -o-linear-gradient(white, #223946);
+  background: -webkit-linear-gradient(white, #223946);
+  background: -moz-linear-gradient(white, #223946);
+  border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  padding: 4px;
+}
+.destaque .info {
+  border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
 }
 
 a:link {

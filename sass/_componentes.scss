@@ -7,16 +7,12 @@
     text-align: center;
     margin: 16px;
 
-    @include bordaEspecial();
+    @include bordaEspecial($cor-secundaria, 10%, 2px);
 
     .info{
         background-color: $cor-clara;
         height: 100%;
         width: 100%;
-        border-radius: 10%;
-        -o-border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
     }
 
     h2{
@@ -30,6 +26,10 @@
     hr{
         margin: 16px 0 16px 0;
     }
+}
+
+.destaque{
+    @include bordaEspecial($cor-primaria, 10%, 4px);   
 }
 
 a{
