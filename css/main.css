@@ -26,15 +26,15 @@ body {
   margin-left: 104px;
   padding: 48px 0 48px 0;
 }
-#header h1 {
+#header .info h1 {
   font-size: 2.4em;
   margin-bottom: 16px;
 }
-#header h3 {
+#header .info h3 {
   font-weight: normal;
   margin-bottom: 8px;
 }
-#header a {
+#header .info a {
   padding: 0 8px 0 8px;
 }
 
