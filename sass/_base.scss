@@ -25,7 +25,19 @@ $fonte-principal: 'Roboto', sans-serif;
 
 //MIXINS
 $larguras: ("normal":4px, "especial":6px);
-@mixin bordaEspecial($cor, $raio, $tipo){
+@mixin bordaEspecial($cor, $tipo){
+
+    $raio: 0%;
+    @if $tipo == "normal" {
+        $raio: 10%;
+    }
+    @else if $tipo == "especial"{
+        $raio: 15%;
+    }
+    @else{
+        $raio: 1%;
+    }
+
     $largura: map.get($larguras, $tipo);
 
     background: linear-gradient($cor-clara, $cor); 
