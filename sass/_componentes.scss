@@ -29,7 +29,7 @@
 }
 
 .destaque{
-    @include bordaEspecial($cor-primaria, 10%, 4px );   
+    @include bordaEspecial($cor-primaria, 10%, 4px);   
 }
 
 a{
