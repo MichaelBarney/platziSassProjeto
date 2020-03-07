@@ -25,6 +25,7 @@ $fonte-principal: 'Roboto', sans-serif;
 
 //MIXINS
 $larguras: ("normal":4px, "especial":6px);
+$prefixos: "", "-o-", "-webkit-", "-moz-";
 @mixin bordaEspecial($cor, $tipo){
 
     $raio: 0%;
@@ -40,15 +41,10 @@ $larguras: ("normal":4px, "especial":6px);
 
     $largura: map.get($larguras, $tipo);
 
-    background: linear-gradient($cor-clara, $cor); 
-    background: -o-linear-gradient($cor-clara, $cor); 
-    background: -webkit-linear-gradient($cor-clara, $cor); 
-    background: -moz-linear-gradient($cor-clara, $cor); 
-
-    border-radius: $raio;
-    -o-border-radius: $raio;
-    -webkit-border-radius: $raio;
-    -moz-border-radius: $raio;
+    @each $prefixo in $prefixos {
+        background: #{$prefixo}linear-gradient($cor-clara, $cor); 
+        #{$prefixo}border-radius: $raio;
+    };
 
     padding: $largura;
 
