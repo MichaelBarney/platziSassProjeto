@@ -51,12 +51,12 @@ body {
   text-align: center;
   margin: 16px;
   background: linear-gradient(white, #87C739);
-  background: -o-linear-gradient(white, #87C739);
-  background: -webkit-linear-gradient(white, #87C739);
-  background: -moz-linear-gradient(white, #87C739);
   border-radius: 10%;
+  background: -o-linear-gradient(white, #87C739);
   -o-border-radius: 10%;
+  background: -webkit-linear-gradient(white, #87C739);
   -webkit-border-radius: 10%;
+  background: -moz-linear-gradient(white, #87C739);
   -moz-border-radius: 10%;
   padding: 4px;
 }
@@ -83,12 +83,12 @@ body {
 
 .destaque {
   background: linear-gradient(white, #612da0);
-  background: -o-linear-gradient(white, #612da0);
-  background: -webkit-linear-gradient(white, #612da0);
-  background: -moz-linear-gradient(white, #612da0);
   border-radius: 15%;
+  background: -o-linear-gradient(white, #612da0);
   -o-border-radius: 15%;
+  background: -webkit-linear-gradient(white, #612da0);
   -webkit-border-radius: 15%;
+  background: -moz-linear-gradient(white, #612da0);
   -moz-border-radius: 15%;
   padding: 6px;
 }
