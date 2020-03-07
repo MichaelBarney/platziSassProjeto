@@ -1,18 +1,21 @@
 .projeto{
-    width: 16vw;
     height: 16vw;
+    width: 16vw; 
 
     min-width: 240px;
     min-height: 240px;
 
-    float: left;
-
-    padding: 8px;
+    float: left; 
+    
     text-align: center;
     margin: 16px;
 
     @include bordaEspecial($cor-secundaria, "normal");
 
+    @include sm{
+        display: inline-block;
+        float: none;
+    }
     .info{
         background-color: $cor-clara;
         height: 100%;
@@ -44,7 +47,7 @@ a{
 }
 
 %secao{
-    background-color: $cor-clara;
+    background-color: $cor-clara; 
     padding: 24px 0px 24px 0px;
     text-align: center;
     color: $cor-primaria;

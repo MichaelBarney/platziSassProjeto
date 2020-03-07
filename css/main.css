@@ -26,10 +26,24 @@ body {
   border-radius: 50%;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  #header .foto {
+    float: none;
+    margin: auto;
+  }
+}
 #header .info {
   float: left;
   margin-left: 104px;
   padding: 48px 0 48px 0;
+}
+@media (max-width: 768px) {
+  #header .info {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 32px;
+    margin-left: 0px;
+  }
 }
 #header .info h1 {
   font-size: 2.4em;
@@ -43,13 +57,24 @@ body {
   padding: 0 8px 0 8px;
 }
 
+@media (max-width: 564px) {
+  #footer h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 564px) {
+  #projetos {
+    text-align: center;
+  }
+}
+
 .projeto {
-  width: 16vw;
   height: 16vw;
+  width: 16vw;
   min-width: 240px;
   min-height: 240px;
   float: left;
-  padding: 8px;
   text-align: center;
   margin: 16px;
   background: linear-gradient(white, #87C739);
@@ -67,6 +92,12 @@ body {
   -o-border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
+}
+@media (max-width: 564px) {
+  .projeto {
+    display: inline-block;
+    float: none;
+  }
 }
 .projeto .info {
   background-color: white;

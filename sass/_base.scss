@@ -3,7 +3,7 @@
 @use 'sass:list';
 @use 'sass:map';
 
-//Variaveis
+
 $cor-primaria: #223946;
 $cor-secundaria: #87C739;
 $cor-clara: white;
@@ -23,21 +23,21 @@ $fonte-principal: 'Roboto', sans-serif;
     display: table;
 }
 
-//MIXINS
+// MIXINS  
 $larguras: ("normal":4px, "especial":6px);
 $prefixos: "", "-o-", "-webkit-", "-moz-";
 @mixin bordaEspecial($cor, $tipo){
 
     $raio: 0%;
     @if $tipo == "normal" {
-        $raio: 10%;
+        $raio: 10%
     }
     @else if $tipo == "especial"{
-        $raio: 15%;
+        $raio: 15%  
     }
     @else{
-        @error "Tipo #{$tipo} não é valido!"
-    };
+        @error "Tipo #{$tipo} não é valido"  
+    }
 
     $largura: map.get($larguras, $tipo);
 
@@ -56,9 +56,25 @@ $prefixos: "", "-o-", "-webkit-", "-moz-";
     }
 }
 
-// Funções
+// Funcoes
 @function meuComplementar($cor){
     $complementar: color.complement($cor);
     $escuro: darken($complementar, 10%);
     @return $escuro;
+}
+
+//Consultas de Mídia
+$tela-tablet: 768px;
+$tela-pequena: 564px;
+
+@mixin md{
+    @media (max-width: #{$tela-tablet}){
+        @content
+    }
+};
+
+@mixin sm{
+    @media (max-width: #{$tela-pequena}){
+        @content
+    }
 }
