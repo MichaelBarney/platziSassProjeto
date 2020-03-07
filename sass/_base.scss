@@ -1,5 +1,6 @@
 //Modulos
 @use 'sass:color';
+@use 'sass:list';
 
 //Variaveis
 $cor-primaria: #223946;
@@ -22,7 +23,10 @@ $fonte-principal: 'Roboto', sans-serif;
 }
 
 //MIXINS
-@mixin bordaEspecial($cor, $raio, $largura){
+$larguras: 4px 6px;
+@mixin bordaEspecial($cor, $raio, $tipo){
+    $largura: list.nth($larguras, $tipo);
+
     background: linear-gradient($cor-clara, $cor); 
     background: -o-linear-gradient($cor-clara, $cor); 
     background: -webkit-linear-gradient($cor-clara, $cor); 

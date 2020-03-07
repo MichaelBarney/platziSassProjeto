@@ -58,7 +58,7 @@ body {
   -o-border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
-  padding: 2px;
+  padding: 4px;
 }
 .projeto .info {
   border-radius: 10%;
@@ -90,7 +90,7 @@ body {
   -o-border-radius: 10%;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
-  padding: 4px;
+  padding: 6px;
 }
 .destaque .info {
   border-radius: 10%;
