@@ -10,6 +10,10 @@ body{
     .foto{
         float: left;
         height: 100%;
+        margin-left: 104px;
+        border: meuComplementar($cor-secundaria) 8px solid;
+        border-radius: 50%;
+        box-sizing: border-box;
     }
 
     @extend %secao;

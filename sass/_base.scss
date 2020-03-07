@@ -1,3 +1,6 @@
+//Modulos
+@use 'sass:color';
+
 //Variaveis
 $cor-primaria: #223946;
 $cor-secundaria: #87C739;
@@ -38,4 +41,11 @@ $fonte-principal: 'Roboto', sans-serif;
         -webkit-border-radius: $raio;
         -moz-border-radius: $raio;
     }
+}
+
+// Funcoes
+@function meuComplementar($cor){
+    $complementar: color.complement($cor);
+    $escuro: darken($complementar, 10%);
+    @return $escuro;
 }
