@@ -43,7 +43,7 @@ $fonte-principal: 'Roboto', sans-serif;
     }
 }
 
-// Funcoes
+// Funções
 @function meuComplementar($cor){
     $complementar: color.complement($cor);
     $escuro: darken($complementar, 10%);
