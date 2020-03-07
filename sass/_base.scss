@@ -37,7 +37,7 @@ $prefixos: "", "-o-", "-webkit-", "-moz-";
     }
     @else{
         @error "Tipo #{$tipo} não é valido!"
-    }
+    };
 
     $largura: map.get($larguras, $tipo);
 
