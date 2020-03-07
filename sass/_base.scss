@@ -1,6 +1,7 @@
 //Modulos
 @use 'sass:color';
 @use 'sass:list';
+@use 'sass:map';
 
 //Variaveis
 $cor-primaria: #223946;
@@ -23,9 +24,9 @@ $fonte-principal: 'Roboto', sans-serif;
 }
 
 //MIXINS
-$larguras: 4px 6px;
+$larguras: ("normal":4px, "especial":6px);
 @mixin bordaEspecial($cor, $raio, $tipo){
-    $largura: list.nth($larguras, $tipo);
+    $largura: map.get($larguras, $tipo);
 
     background: linear-gradient($cor-clara, $cor); 
     background: -o-linear-gradient($cor-clara, $cor); 

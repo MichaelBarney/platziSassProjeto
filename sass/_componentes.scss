@@ -7,7 +7,7 @@
     text-align: center;
     margin: 16px;
 
-    @include bordaEspecial($cor-secundaria, 10%, 1);
+    @include bordaEspecial($cor-secundaria, 10%, "normal");
 
     .info{
         background-color: $cor-clara;
@@ -29,7 +29,7 @@
 }
 
 .destaque{
-    @include bordaEspecial(meuComplementar($cor-secundaria), 10%, 2);   
+    @include bordaEspecial(meuComplementar($cor-secundaria), 10%, "especial");   
 }
 
 a{
