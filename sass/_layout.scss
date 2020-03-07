@@ -5,19 +5,17 @@ body{
 }
 
 #header{
-    background-color: $cor-clara;
     height: 200px;
-    padding: 24px 0px 24px 0px;
 
     .foto{
         float: left;
         height: 100%;
     }
 
+    @extend %secao;
+
     .info{
         float: left;
-        text-align: center;
-        color: $cor-primaria;
         margin-left: 104px;
         padding: 48px 0 48px 0; 
 
@@ -38,5 +36,5 @@ body{
 }
 
 #footer{
-    background-color: $cor-clara;
-}
+    @extend %secao;
+};

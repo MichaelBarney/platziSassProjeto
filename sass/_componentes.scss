@@ -29,7 +29,7 @@
 }
 
 .destaque{
-    @include bordaEspecial($cor-primaria, 10%, 4px);   
+    @include bordaEspecial($cor-primaria, 10%, 4px );   
 }
 
 a{
@@ -37,4 +37,11 @@ a{
         color: $cor-secundaria;
         text-decoration: inherit;
     }
+}
+
+%secao{
+    background-color: $cor-clara;
+    padding: 24px 0px 24px 0px;
+    text-align: center;
+    color: $cor-primaria;
 }
